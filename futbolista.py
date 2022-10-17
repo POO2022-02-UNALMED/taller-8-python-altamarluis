@@ -8,9 +8,9 @@ class Futbolista(Persona, Deportista):
     def __init__(self, nombre, edad, altura, sexo,anios,goles,tarjetas,habil):
         Persona.__init__(self,nombre, edad, altura, sexo)
         Deportista.__init__(self,'Futbol',anios)
-        _golesMarcados = goles
-        _tarjetasRojas = tarjetas
-        _piernaHabil = habil
+        self._golesMarcados = goles
+        self._tarjetasRojas = tarjetas
+        self._piernaHabil = habil
         Futbolista._listaFutbolistas.append(self)
     
     def getGolesMarcados(self):
